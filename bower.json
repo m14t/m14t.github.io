@@ -1,0 +1,20 @@
+{
+  "name": "m14t.github.io.git",
+  "version": "0.0.0",
+  "homepage": "https://m14t.github.io/",
+  "authors": [
+    "Matt Farmer <work@mattfarmer.net>"
+  ],
+  "description": "Matt Farmer's Resume",
+  "main": "index.html",
+  "keywords": [
+    "Matt",
+    "Farmer",
+    "Resume"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "normalize-css": "~3.0.1"
+  }
+}
