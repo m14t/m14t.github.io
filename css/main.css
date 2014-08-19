@@ -1,0 +1,101 @@
+/* Global tag styles */
+address {
+    font-style: normal;
+}
+dl, dt, dd {
+    margin: 0;
+}
+ul {
+    padding-left: 1em;
+    margin-left: 1em;
+}
+
+/* Global site styles */
+body {
+    max-width: 900px;
+    margin: 0 auto;
+}
+@media print {
+    body {
+        font-size: 0.8em;
+    }
+}
+.mbn { margin-bottom: 0;}
+.mtn { margin-top: 0;}
+
+
+/* Resume layout */
+@media (min-width: 600px), print {
+    .resume > header,
+    .resume-section > h2 {
+        clear: both;
+        float: left;
+        margin-top: 0;
+        width: 30%;
+        text-align: right;
+        vertical-align: top;
+    }
+    .resume > .summary,
+    .resume-section > ul {
+        margin-left:33%;
+    }
+    .resume > .summary {
+        padding-left: 1em;
+    }
+} /* end desktop media query */
+
+.resume-section {
+    margin-top: 3em;
+}
+.resume-section > ul > li {
+    margin-top: 1.5em;
+}
+
+/* Header information */
+.personal-info > .vcard > span,
+.personal-info > .vcard > .adr > .street-address {
+    display: block;
+}
+
+.personal-info > .vcard > .fn {
+    margin: 0;
+    font-size: 3em;
+    font-weight: normal;
+}
+
+.summary > h1 {
+    margin-top: .5em;
+}
+
+
+/* Body Styling */
+.resume-section .h-event > .p-location,
+.resume-section .h-event > .p-name {
+    margin: 0;
+}
+
+.outdated {
+    display: none;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
