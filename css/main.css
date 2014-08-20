@@ -23,6 +23,11 @@ body {
 .mbn { margin-bottom: 0;}
 .mtn { margin-top: 0;}
 
+@media print {
+    .print-new-page {
+        page-break-before: always;
+    }
+}
 
 /* Resume layout */
 @media (min-width: 600px), print {
