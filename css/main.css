@@ -9,6 +9,10 @@ ul {
     padding-left: 1em;
     margin-left: 1em;
 }
+/* Readability */
+p, li, .personal-info > address > span {
+    line-height: 1.4em;
+}
 
 /* Global site styles */
 body {
@@ -19,17 +23,24 @@ body {
     body {
         font-size: 0.8em;
     }
+    .print-new-page {
+        page-break-before: always;
+    }
+    .personal-info > address > span {
+        line-height: 1.2em;
+    }
 }
 .mbn { margin-bottom: 0;}
 .mtn { margin-top: 0;}
 
-@media print {
-    .print-new-page {
-        page-break-before: always;
-    }
-}
+
 
 /* Resume layout */
+@media (max-width: 600px) {
+    body {
+        padding: 2em 10% 0 10%;
+    }
+}
 @media (min-width: 600px), print {
     .resume > header,
     .resume-section > h2 {
@@ -50,7 +61,7 @@ body {
 } /* end desktop media query */
 
 .resume-section {
-    margin-top: 3em;
+    margin-top: 2em;
 }
 .resume-section > ul > li {
     margin-top: 1.5em;
